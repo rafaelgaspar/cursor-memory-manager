@@ -14,7 +14,7 @@ sections=()
 
 sections+=("## Conversational memory (session hook)")
 sections+=("Persistent memory lives in ~/.cursor/memory.md (global) and .cursor/memory.md (per workspace root).")
-sections+=("To create, update, dedupe, or compact memory, follow the **memory-manager** skill. Update proactively when you learn durable facts that would help future chats—not only when the user says \"remember.\" Never store secrets.")
+sections+=("To create, update, dedupe, or compact memory, follow the **memory-manager** skill. After any reply that established a durable fact, write it the same turn into the matching ## section of these files—not only when the user says \"remember.\" Italic _Store:_ lines are scaffolding; replace them with a real bullet. Never store secrets.")
 sections+=("")
 
 global="${HOME}/.cursor/memory.md"
