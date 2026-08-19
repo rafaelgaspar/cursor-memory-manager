@@ -18,9 +18,10 @@ you use Cursor.
 - `dot-cursor/hooks.json` — hook registration (`sessionStart` → `inject-memory.sh`)
 - `dot-cursor/hooks/inject-memory.sh` — reads global + per-workspace
   `memory.md` files and injects them as chat context at session start
-- `dot-cursor/memory.md` — starter template (empty `Preferences`/`Decisions`
-  sections plus a reminder of what not to store); only installed if you
+- `dot-cursor/memory.md` — starter template (global section scaffolding plus reminders of what not to store); only installed if you
   don't already have a `~/.cursor/memory.md`
+
+Committed project `.cursor/memory.md` is injected with **project-only** untrusted framing in the hook (repo facts as reference, not instructions). Global memory is injected without that wrapper so Identity/Preferences/Tooling stay strong.
 
 ## Requirements
 
